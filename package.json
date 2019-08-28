@@ -1,0 +1,22 @@
+{
+  "name": "brain-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "brain-games": "src/bin/brain-games.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mao39/project-lvl1-s486.git"
+  },
+  "author": "Furman Danil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mao39/project-lvl1-s486/issues"
+  },
+  "homepage": "https://github.com/Mao39/project-lvl1-s486#readme"
+}
