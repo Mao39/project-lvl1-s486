@@ -6,9 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": {
-    "brain-games": "src/bin/brain-games.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mao39/project-lvl1-s486.git"
