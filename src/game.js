@@ -7,6 +7,7 @@ const randomOperator = () => '*-+'[randomNumber(0, 3)];
 const getTask = (gameName) => {
   if (gameName === 'brain-even') return randomNumber(1, 51);
   if (gameName === 'brain-calc') return `${randomNumber(1, 51)} ${randomOperator()} ${randomNumber(1, 51)}`;
+  if (gameName === 'brain-gcd') return `${randomNumber(1, 51)} ${randomOperator()} ${randomNumber(1, 51)}`;
 
   return null;
 };
@@ -14,6 +15,7 @@ const getTask = (gameName) => {
 const getResult = (gameName, task) => {
   if (gameName === 'brain-even') return (task % 2) === 0 ? 'yes' : 'no';
   if (gameName === 'brain-calc') return eval(task);
+  if (gameName === 'brain-gcd') return eval(task);
 
   return null;
 };
