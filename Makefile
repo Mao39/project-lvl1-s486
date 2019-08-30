@@ -6,6 +6,8 @@ brain-even:
 	npx babel-node src/bin/brain-even.js
 brain-calc:
 	npx babel-node src/bin/brain-calc.js
+brain-gcd:
+	npx babel-node src/bin/brain-gcd.js
 publish --dry-run:
 	npm run prepublishOnly
 	npm publish --dry-run
