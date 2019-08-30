@@ -37,15 +37,16 @@ const gcdInit = () => {
 const progressionInit = () => {
   const progressNumber = randomNumber(1, 11);
   const delNumber = randomNumber(1, 11);
-  let start = randomNumber(1, 51);
+  const start = randomNumber(1, 51);
+  let acc = start;
   let result = String(start);
 
   for (let i = 1; i <= 10; i += 1) {
-    start += progressNumber;
-    result += i === delNumber ? ' ..' : ` ${start}`;
+    acc += progressNumber;
+    result += i === delNumber ? ' ..' : ` ${acc}`;
   }
 
-  return constructor(result, delNumber);
+  return constructor(result, start + delNumber * progressNumber);
 };
 
 const getTask = (gameName) => {
