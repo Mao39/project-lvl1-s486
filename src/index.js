@@ -1,5 +1,5 @@
 import greet from './greet';
-import even from './even';
+import game from './game';
 
-export { even };
+export { game };
 export default greet;
