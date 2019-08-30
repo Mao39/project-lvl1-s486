@@ -5,3 +5,6 @@
 **Brain Games**
 
 Educational Hexlet's project
+
+*Brain Even (Asciinema Link):*
+https://asciinema.org/a/gdrf8NY1zhDae0sNGCdyX9pQl
