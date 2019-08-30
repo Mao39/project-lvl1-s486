@@ -10,6 +10,8 @@ brain-gcd:
 	npx babel-node src/bin/brain-gcd.js
 brain-progression:
 	npx babel-node src/bin/brain-progression.js
+brain-prime:
+	npx babel-node src/bin/brain-progression.js
 publish --dry-run:
 	npm run prepublishOnly
 	npm publish --dry-run
