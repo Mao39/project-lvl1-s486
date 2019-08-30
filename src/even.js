@@ -4,7 +4,7 @@ const even = (name) => {
   const iter = (victory) => {
     if (victory === 3) return console.log(`Congratulations, ${name}!`); // name
 
-    const number = Math.floor(Math.random(1, 50) * 50);
+    const number = Math.floor(Math.random() * (51 - 1)) + 1;
     console.log(`Question: ${number}`);
 
     const isEven = (number % 2) === 0 ? 'yes' : 'no';
