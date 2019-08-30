@@ -5,3 +5,5 @@ start:
 publish --dry-run:
 	npm run prepublishOnly
 	npm publish --dry-run
+lint:
+	npx eslint .
