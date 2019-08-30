@@ -1,40 +1,5 @@
 import readlineSync from 'readline-sync';
-
-const randomNumber = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-
-const randomOperator = () => '*-+'[randomNumber(0, 3)];
-
-const getGcd = (a, b) => {
-  if (!b) return a;
-
-  return getGcd(b, a % b);
-};
-
-const getTask = (gameName) => {
-  if (gameName === 'brain-even') return randomNumber(1, 51);
-  if (gameName === 'brain-calc') return `${randomNumber(1, 51)} ${randomOperator()} ${randomNumber(1, 51)}`;
-  if (gameName === 'brain-gcd') return `${randomNumber(1, 51)} ${randomNumber(1, 51)}`;
-
-  return null;
-};
-
-const getResult = (gameName, task) => {
-  if (gameName === 'brain-even') return (task % 2) === 0 ? 'yes' : 'no';
-  if (gameName === 'brain-calc') return eval(task);
-  if (gameName === 'brain-gcd') {
-    let a = '';
-    let b = '';
-
-    for (let i = 0; i <= task.length - 1; i += 1) {
-      if (i < task.length / 2) a += task[i];
-      if (i > task.length / 2) b += task[i];
-    }
-
-    return getGcd(Number(a), Number(b));
-  }
-
-  return null;
-};
+import getTask from './tasks';
 
 const game = (greet, gameName) => {
   const name = greet(gameName);
@@ -43,12 +8,11 @@ const game = (greet, gameName) => {
     if (victory === 3) return console.log(`Congratulations, ${name}!`);
 
     const task = getTask(gameName);
-    console.log(`Question: ${task}`);
+    console.log(`Question: ${task('question')}`);
 
-    const result = getResult(gameName, task);
     const answer = readlineSync.question('Your answer: ');
 
-    if (answer !== String(result)) return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.\n Let's try again, ${name}!`);
+    if (answer !== String(task('result'))) return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${task('result')}'.\n Let's try again, ${name}!`);
 
     console.log('Correct!');
     return iter(victory + 1);
