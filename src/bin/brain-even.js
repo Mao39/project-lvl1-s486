@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
-import greet from '..';
+import greet, { even } from '..';
 
-greet();
+const name = greet('brain-even');
+even(name);
