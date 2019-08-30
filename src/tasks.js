@@ -18,6 +18,17 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
+const isPrime = (number) => {
+  const iter = (num, acc) => {
+    if (acc >= num - 1) return true;
+    if (num % acc === 0) return false;
+
+    return iter(num, acc + 1);
+  };
+
+  return iter(number, 2);
+};
+
 const evenInit = () => {
   const random = randomNumber(1, 51);
   return constructor(random, (random % 2) === 0 ? 'yes' : 'no');
@@ -49,11 +60,17 @@ const progressionInit = () => {
   return constructor(result, start + delNumber * progressNumber);
 };
 
+const primeInit = () => {
+  const num = randomNumber(1, 51);
+  return constructor(num, isPrime(num) ? 'yes' : 'no');
+};
+
 const getTask = (gameName) => {
   if (gameName === 'brain-even') return evenInit();
   if (gameName === 'brain-calc') return calcInit();
   if (gameName === 'brain-gcd') return gcdInit();
   if (gameName === 'brain-progression') return progressionInit();
+  if (gameName === 'brain-prime') return primeInit();
 
   return null;
 };
