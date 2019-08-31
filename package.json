@@ -1,7 +1,13 @@
 {
   "name": "furman-brain-games",
   "version": "1.6.4",
-  "description": "",
+  "description": "Educational Hexlet's project, small games",
+  "keywords": [
+    "brain-games",
+    "hexlet",
+    "furman-brain-games",
+    "console game"
+  ],
   "main": "index.js",
   "scripts": {
     "babel-node": "babel-node",
