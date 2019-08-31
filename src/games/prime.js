@@ -1,4 +1,5 @@
 import randomNumber from '../random';
+import constructor from '../constructor';
 
 const isPrime = (number) => {
   const iter = (num, acc) => {

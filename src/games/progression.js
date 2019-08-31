@@ -1,4 +1,5 @@
 import randomNumber from '../random';
+import constructor from '../constructor';
 
 const getProgressionTask = () => {
   const progressNumber = randomNumber(1, 11);

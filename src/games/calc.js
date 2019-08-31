@@ -1,3 +1,4 @@
+import constructor from '../constructor';
 import randomNumber, { randomOperator } from '../random';
 
 const getCalcTask = () => {

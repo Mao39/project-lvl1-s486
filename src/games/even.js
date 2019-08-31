@@ -1,4 +1,5 @@
 import randomNumber from '../random';
+import constructor from '../constructor';
 
 const getEvenTask = () => {
   const random = randomNumber(1, 51);
