@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import getTask from './tasks';
 
-const game = (greet, gameName) => {
+const engine = (greet, gameName) => {
   const name = greet(gameName);
 
   const iter = (victory) => {
@@ -21,4 +21,4 @@ const game = (greet, gameName) => {
   return iter(0);
 };
 
-export default game;
+export default engine;
