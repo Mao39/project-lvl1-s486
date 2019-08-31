@@ -3,6 +3,7 @@ import getTask from './task';
 
 const engine = (greet, gameName) => {
   const name = greet(gameName);
+  if (gameName === 'brain-games') return null;
 
   const iter = (victory) => {
     if (victory === 3) return console.log(`Congratulations, ${name}!`);
