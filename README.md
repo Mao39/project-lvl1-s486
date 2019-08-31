@@ -6,17 +6,20 @@
 
 Educational Hexlet's project
 
+*Brain Games (Asciinema Link):*
+https://asciinema.org/a/sWhhvMkBHU1Qs7jV1LcQJ4zSb
+
 *Brain Even (Asciinema Link):*
-https://asciinema.org/a/gdrf8NY1zhDae0sNGCdyX9pQl
+https://asciinema.org/a/v1dks786qml46pkbzUJPZgR5O
 
 *Brain Calc (Asciinema Link):*
-https://asciinema.org/a/2UT6i8t4Bbuk26ry5SfTvaHOP
+https://asciinema.org/a/LTMHptTDLZlFhlhgMlJh1wB3C
 
 *Brain GCD (Asciinema Link):*
-https://asciinema.org/a/uTSoMZ2mjo1tUSo8BpnBtmeKY
+https://asciinema.org/a/N5dWGIBN2FgOnqfIXBToYo5VK
 
 *Brain Progression (Asciinema Link):*
-https://asciinema.org/a/aXa6VfdaJX6nmuu3AxPCR2gpp
+https://asciinema.org/a/fE67GOZB9oBYpcLUmrp33stMh
 
 *Brain Prime (Asciinema Link):*
-https://asciinema.org/a/qoRucGSspQgCIIBFY5GnqxODB
+https://asciinema.org/a/v2JULLzHXMlOp37JQDxokWuD4
