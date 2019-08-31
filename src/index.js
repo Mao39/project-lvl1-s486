@@ -1,5 +1,5 @@
 import greet from './greet';
-import game from './game';
+import engine from './engine';
 
-export { game };
+export { engine };
 export default greet;
