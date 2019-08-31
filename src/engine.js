@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import getTask from './tasks';
+import getTask from './task';
 
 const engine = (greet, gameName) => {
   const name = greet(gameName);
